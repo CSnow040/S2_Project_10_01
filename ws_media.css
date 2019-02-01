@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 8
+   Case Problem 1
+
+   Rhetoric in the United States Styles for Media
+   Author: Caleb Snow
+   Date:   1/29/19
+
+   Filename: ws_media.css
+
+*/
+
+/* VideoPlayer Styles */
+/* The video element selector is used to give the video a space on the web page to be more in order and look better using margins and widths with a display of block to give it said space. */
+video {
+    display: block;
+    width: 90%;
+    margin: 5px auto 5px auto;
+}
+
+/* This media query is used to put the video in a good place or screens that are bigger to basically move it to the right on the section it is places in on the website. */
+@media only screen and (min-width: 521px) {
+    video {
+        width: 360px;
+        float: right;
+        margin: 10px;
+    }
+}
+
+/* Track Styles */
+/* This pseudo-class of cue is used to style the font, font size, and color of the background and font. */
+::cue {
+    font: 1.3em sans-serif;
+    color: rgb(221, 128, 160);
+    background-color: rgba(255, 255, 255, 0.8);
+}
